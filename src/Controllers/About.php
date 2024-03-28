@@ -1,11 +1,15 @@
 <?php
 namespace App\Controllers;
-class About {
+use App\Core\Controller;
+class About extends Controller{
 
     public function index() {
-        echo 'About/index';
+        $data['header'] = 'About';
+        $this->render('template/headers', $data);
+        $this->render('about/index');
+        $this->render('template/footer');
     }
     public function page() {
-        echo 'About/page';
+        $this->render('about/page');
     }
 }

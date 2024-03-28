@@ -1,7 +1,7 @@
 <?php
-
+namespace App\Core;
 class Controller {
-    public function __construct() {
-        echo 'controller';
-    }
+        public function render($view, $data = []) {
+            require_once '../src/Views/' . $view . '.php';
+        }
 }
