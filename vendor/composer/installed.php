@@ -3,7 +3,7 @@
         'name' => 'pphobia-hp/php_projekkkk',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '2ccea40277994a4bb8f93021967ee81dbcbe8656',
+        'reference' => 'acf2ef5a0f178510e6b5859dfe0b09271845ad93',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'pphobia-hp/php_projekkkk' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '2ccea40277994a4bb8f93021967ee81dbcbe8656',
+            'reference' => 'acf2ef5a0f178510e6b5859dfe0b09271845ad93',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
