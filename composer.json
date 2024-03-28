@@ -1,0 +1,15 @@
+{
+    "name": "pphobia-hp/php_projekkkk",
+    "authors": [
+        {
+            "name": "fathursyh",
+            "email": "fathur.syah1@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
