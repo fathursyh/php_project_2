@@ -10,6 +10,9 @@ class About extends Controller{
         $this->render('template/footer');
     }
     public function page() {
+        $data['header'] = 'About';
+        $this->render('template/headers', $data);
         $this->render('about/page');
+        $this->render('template/footer');
     }
 }
