@@ -24,9 +24,11 @@ main {
 .utama {
     position: relative;
     width: 100dvw;
-    height: 85dvh;
+    height: 80dvh;
     background-color: var(--putih);
     overflow-x: hidden;
     box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+    justify-content: center;
+    align-items: center;
 }
 
