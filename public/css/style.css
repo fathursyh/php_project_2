@@ -27,5 +27,6 @@ main {
     height: 85dvh;
     background-color: var(--putih);
     overflow-x: hidden;
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
 }
 
