@@ -3,18 +3,17 @@
 <main>
 <section class="utama">
   <div class="p-5 text-center bg-body-tertiary rounded-3 h-100">
-    <svg class="bi mt-4 mb-3" style="color: var(--bs-indigo);" width="100" height="100"><use xlink:href="#bootstrap"></use></svg>
-    <h1 class="text-body-emphasis">Customer Centered</h1>
+    <img src=<?= BASEPATH . '/php_project_2/assets/home.svg'?> alt="" width="150" class="my-4">
+    <h1 class="text-body-emphasis">Best people provides best results.</h1>
     <p class="col-lg-8 mx-auto fs-5 text-muted">
-      This is a custom jumbotron featuring an SVG image at the top, some longer text that wraps early thanks to a responsive <code>.col-*</code> class, and a customized call to action.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nobis labore iusto, doloremque omnis, reprehenderit facilis amet at cum perferendis reiciendis ad. Accusamus, maxime dolor. Excepturi provident sapiente delectus vitae?
     </p>
     <div class="d-inline-flex gap-2 mb-5">
       <button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded" type="button">
-        Call to action
-        <svg class="bi ms-2" width="24" height="24"><use xlink:href="#arrow-right-short"></use></svg>
+        Hire us
       </button>
       <button class="btn btn-outline-secondary btn-lg px-4 rounded" type="button">
-        Secondary link
+        Get to know
       </button>
     </div>
   </div>
