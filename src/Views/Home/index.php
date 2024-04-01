@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 
 <main>
-<section class="utama">
-  <div class="p-5 text-center bg-body-tertiary rounded-3 h-100">
+<section aria-label="landing" id="landing">
+  <div class="p-5 text-center bg-body-tertiary">
     <img src=<?= BASEPATH . '/php_project_2/assets/home.svg'?> alt="" width="150" class="my-4">
-    <h1 class="text-body-emphasis">Best people provides best results.</h1>
-    <p class="col-lg-8 mx-auto fs-5 text-muted">
+    <h1 class="text-body-emphasis">"We made sure that our work meet your satisfaction."</h1>
+    <p class="col-lg-8 mx-auto fs-5 text-muted text-start">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nobis labore iusto, doloremque omnis, reprehenderit facilis amet at cum perferendis reiciendis ad. Accusamus, maxime dolor. Excepturi provident sapiente delectus vitae?
     </p>
     <div class="d-inline-flex gap-2 mb-5">
