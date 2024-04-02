@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?=$data['header']?></title>
     <link rel="stylesheet" href=<?= DIREKTORI . '/css/bootstrap.css' ?>>
-    <link rel="stylesheet" href=<?= DIREKTORI . '/css/style.css?v=1'?>>
+    <link rel="stylesheet" href=<?= DIREKTORI . '/css/style.css?' . time(); ?>>
     <style>
         nav {
             z-index: 3;
@@ -15,7 +15,7 @@
         }
     </style>
 </head>
-<body class="vh-100">
+<body class="h-100%">
 <nav class="navbar navbar-expand-lg bg-body-tertiary px-4">
   <div class="container-fluid">
     <a class="navbar-brand ms-3" href="#">DBZ</a>
@@ -28,7 +28,7 @@
           <a class="nav-link active" aria-current="page" href="<?= DIREKTORI; ?>">Home</a>
         </li>
         <li class="nav-item rounded">
-          <a class="nav-link" href="<?= DIREKTORI; ?>/features">Features</a>
+          <a class="nav-link" href="<?= DIREKTORI; ?>/mahasiswa">Mahasiswa</a>
         </li>
         <li class="nav-item rounded">
           <a class="nav-link" href="#">Pricing</a>
@@ -38,7 +38,7 @@
             Divisions
           </a>
           <ul class="dropdown-menu dropdown-menu-end text-end">
-            <li><a class="dropdown-item" href="<?= DIREKTORI; ?>/mahasiswa">Fathur Syah</a></li>
+            <li><a class="dropdown-item" href="#">Fathur Syah</a></li>
             <li><a class="dropdown-item" href="#">Gabriel Sebastian</a></li>
             <li><a class="dropdown-item" href="#">Muhammad Abian</a></li>
           </ul>
