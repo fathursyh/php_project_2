@@ -1,32 +1,32 @@
-nama      ,npm       ,jurusan
-Fathur    ,065122057 ,Ilmu Komputer
-Gabriel   ,065143124 ,Psikologi
-Abian     ,061451412 ,Geologi
-Nunu      ,065142924 ,Teknik Sipil
-Pijar     ,061241412 ,Farmasi
-Naufal    ,051231513 ,Geologi
-Reyhan    ,058310021 ,Teknik Sipil
-Alya      ,065122058 ,Ilmu Komputer
-Budi      ,065143125 ,Teknik Metalurgi
-Citra     ,061451413 ,Ilmu Matematika
-Dewi      ,065142925 ,Teknik Elektro
-Eka       ,061241413 ,Farmasi
-Fandi     ,051231514 ,Akuntansi
-Gita      ,058310022 ,Teknik Sipil
-Hadi      ,065122059 ,Ilmu Komputer
-Indra     ,065143126 ,Teknik Kimia
-Joko      ,061451414 ,Ilmu Fisika
-Kamila    ,065142926 ,Teknik Sipil
-Lia       ,061241414 ,Farmasi
-Mira      ,051231515 ,Teknik Pertambangan
-Nina      ,058310023 ,Ekonomi
-Oscar     ,065122060 ,Ilmu Komputer
-Putri     ,065143127 ,Teknik Kimia
-Rudi      ,061451415 ,Geologi
-Sari      ,065142927 ,Teknik Sipil
-Tono      ,061241415 ,Farmasi
-Umi       ,051231516 ,Geologi
-Vera      ,058310024 ,Teknik Elektro
-Wira      ,065122061 ,Ilmu Komputer
-Xander    ,065143128 ,Psikologi
-Yuni      ,061451416 ,Akuntansi
+nama      ,npm       ,jurusan,umur
+Fathur    ,065122057 ,Ilmu Komputer,18
+Gabriel   ,065143124 ,Psikologi,19
+Abian     ,061451412 ,Geologi,18
+Nunu      ,065142924 ,Teknik Sipil,18
+Pijar     ,061241412 ,Farmasi,19
+Naufal    ,051231513 ,Geologi,18
+Reyhan    ,058310021 ,Teknik Sipil,20
+Alya      ,065122058 ,Ilmu Komputer,19
+Budi      ,065143125 ,Teknik Metalurgi,18
+Citra     ,061451413 ,Ilmu Matematika,18
+Dewi      ,065142925 ,Teknik Elektro,17
+Eka       ,061241413 ,Farmasi,19
+Fandi     ,051231514 ,Akuntansi,20
+Gita      ,058310022 ,Teknik Sipil,24
+Hadi      ,065122059 ,Ilmu Komputer,19
+Indra     ,065143126 ,Teknik Kimia,19
+Joko      ,061451414 ,Ilmu Fisika,18
+Kamila    ,065142926 ,Teknik Sipil,18
+Lia       ,061241414 ,Farmasi,18
+Mira      ,051231515 ,Teknik Pertambangan,17
+Nina      ,058310023 ,Ekonomi,18
+Oscar     ,065122060 ,Ilmu Komputer,18
+Putri     ,065143127 ,Teknik Kimia,18
+Rudi      ,061451415 ,Geologi,18
+Sari      ,065142927 ,Teknik Sipil,18
+Tono      ,061241415 ,Farmasi,17
+Umi       ,051231516 ,Geologi,19
+Vera      ,058310024 ,Teknik Elektro,20
+Wira      ,065122061 ,Ilmu Komputer,19
+Xander    ,065143128 ,Psikologi,19
+Yuni      ,061451416 ,Akuntansi,18

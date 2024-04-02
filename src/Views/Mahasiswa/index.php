@@ -10,6 +10,7 @@
                         <th>Nama</th>
                         <th>NPM</th>
                         <th>Jurusan</th>
+                        <th>Umur</th>
                     </tr>
                 </thead>
                 <?php foreach ($data['mhs'] as $mhs) : ?>
@@ -18,7 +19,7 @@
                             <td><?= $mhs['nama'] ?></td>
                             <td><?= $mhs['npm'] ?></td>
                             <td><?= $mhs['jurusan'] ?></td>
-                         
+                            <td><?= $mhs['umur'] ?></td>
                         </tr>
 
                         <?php endforeach; ?>
