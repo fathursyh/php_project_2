@@ -10,18 +10,20 @@
 html, body {
     height: 100dvh;
     overflow-x: hidden;
-    background-color: var(--latar);
+    background-color: var(--putih);
 }
 
 main {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    height: 800px;
+    height: 100%;
     width: 100%;
 }
 
-
 footer {
-    z-index: -30;
+    position: relative;
+    width: 100%;
+    top: 100%;
 }
+

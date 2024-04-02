@@ -1,4 +1,4 @@
-<footer class="text-white text-center p-2 opacity-75">
+<footer class="text-center p-2 opacity-75 text-dark" id="footer">
 &#169;<?= date("Y") ?> Fathur Syah - Made with &#x2661;
 </footer>
 

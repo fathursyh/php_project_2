@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?=$data['header']?></title>
     <link rel="stylesheet" href=<?= DIREKTORI . '/css/bootstrap.css' ?>>
-    <link rel="stylesheet" href=<?= DIREKTORI . '/css/style.css'?>>
+    <link rel="stylesheet" href=<?= DIREKTORI . '/css/style.css?v=1'?>>
     <style>
         nav {
             z-index: 3;
@@ -25,10 +25,10 @@
     <div class="collapse navbar-collapse py-3" id="navbarNavDropdown">
       <ul class="navbar-nav text-end ms-auto">
         <li class="nav-item rounded">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="<?= DIREKTORI; ?>">Home</a>
         </li>
         <li class="nav-item rounded">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="<?= DIREKTORI; ?>/features">Features</a>
         </li>
         <li class="nav-item rounded">
           <a class="nav-link" href="#">Pricing</a>
