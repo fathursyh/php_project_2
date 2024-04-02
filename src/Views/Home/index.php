@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-
 <main>
-<section aria-label="landing" id="landing">
   <div class="p-5 text-center bg-body-tertiary">
     <img src=<?= BASEPATH . '/php_project_2/assets/home.svg'?> alt="" width="150" class="my-4">
     <h1 class="text-body-emphasis">"We made sure that our work meet your satisfaction."</h1>
@@ -16,6 +13,5 @@
         Get to know
       </button>
     </div>
-  </div>
 </section>
 </main>

@@ -15,7 +15,7 @@
         }
     </style>
 </head>
-<body>
+<body class="vh-100">
 <nav class="navbar navbar-expand-lg bg-body-tertiary px-4">
   <div class="container-fluid">
     <a class="navbar-brand ms-3" href="#">DBZ</a>

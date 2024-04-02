@@ -7,23 +7,16 @@
     padding: 0;
 }
 
-html, body {
-    height: 100dvh;
-    overflow-x: hidden;
-    background-color: var(--putih);
-}
-
-main {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+html {
     height: 100%;
-    width: 100%;
+}
+body {
+    min-height: 100%;
 }
 
 footer {
     position: relative;
     width: 100%;
-    top: 100%;
+    top: 7%;
 }
 
