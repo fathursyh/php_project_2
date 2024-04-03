@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?=$data['header']?></title>
-    <link rel="stylesheet" href=<?= DIREKTORI . '/css/bootstrap.css' ?>>
+    <link rel="stylesheet" href=<?= DIREKTORI . '/css/bootstrap.css'?>>
     <link rel="stylesheet" href=<?= DIREKTORI . '/css/style.css?' . time(); ?>>
     <style>
         nav {

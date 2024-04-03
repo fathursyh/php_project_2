@@ -1,7 +1,7 @@
 <div class="container mt-5 p-5 h-75">
 
     <div class="row">
-        <div class="col-6">
+        <div class="col-sm-8 col-12">
             <h3 class="mb-3">Daftar Mahasiswa</h3>
 
             <table>
