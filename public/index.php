@@ -1,10 +1,8 @@
 <?php
 
 use App\Core\App;
-
+include_once '../src/Config/config.php';
 require '../vendor/autoload.php';
-define('BASEPATH', 'http://localhost');
-define('DIREKTORI', BASEPATH . '/php_project_2/public');
 
 // RUN APP
 $app = new App();
