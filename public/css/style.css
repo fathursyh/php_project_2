@@ -19,24 +19,7 @@ footer {
     width: 100%;
     top: 28dvh;
 }
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: center;
+a {
+    text-decoration: none;
 }
 
-table tr th,
-table tr td {
-    padding: 5px;
-    border: 2px #d1bdbd solid;
-}
-
-tfoot tr th,
-tfoot tr td {
-    font-size: 20px;
-}
-
-tfoot tr th {
-    text-align: right;
-}
