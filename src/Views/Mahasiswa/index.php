@@ -19,9 +19,11 @@
             <h3 class="mb-3">Daftar Mahasiswa</h3>
             <ul class="list-group">
                 <?php foreach ($data['mhs'] as $mhs) : ?>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <li class="list-group-item">
                         <?= $mhs['nama'] ?>
-                        <a class="badge bg-info text-white" href="<?= DIREKTORI ?>/mahasiswa/detail/<?= $mhs['npm'] ?>">More ></a>
+                        <a class="badge bg-danger text-white float-end ms-1" href="<?= DIREKTORI ?>/mahasiswa/hapus/<?= $mhs['npm'] ?>" onclick="return confirm('hapus data?')">Delete</a>
+                        <a class="badge bg-success text-white float-end ms-1 ubahData" href="<?= DIREKTORI ?>/mahasiswa/ubah/<?= $mhs['npm'] ?>" data-bs-toggle="modal" data-bs-target="#formModal">Edit</a>
+                        <a class="badge bg-primary text-white float-end ms-1" href="<?= DIREKTORI ?>/mahasiswa/detail/<?= $mhs['npm'] ?>">Detail</a>
                     </li>
                 <?php endforeach; ?>
             </ul>

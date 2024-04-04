@@ -42,6 +42,16 @@ class Mahasiswa_model {
         return $this->db->rowCount();
     }
 
+    public function hapusDataMahasiswa($npm) {
+        $query = "DELETE FROM mahasiswa WHERE npm = :npm";
+        $this->db->query($query);
+        $this->db->bind('npm', $npm);
+
+        $this->db->execute();
+
+        return $this->db->rowCount();
+    }
+
 
 
 }
