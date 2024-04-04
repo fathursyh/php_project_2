@@ -2,12 +2,16 @@
 namespace App\Controllers;
 use App\Core\Controller;
 use App\Core\Flasher;
+
+use const App\Config\JURUSAN;
+
 class Mahasiswa extends Controller {
 
     public function index() {
         $data['header'] = 'Daftar Mahasiswa';
         $data['nama'] = $this->model('User_model')->getUser();
         $path = BASEPATH . '/php_project_2/assets/files/mahasiswa.csv';
+        $data['form'] = JURUSAN;
         $data['mhs'] = $this->model('Mahasiswa_model')->getMahasiswaFromDb();
         $this->render('template/headers', $data);
         $this->render('mahasiswa/index', $data);

@@ -14,6 +14,7 @@
             gap: 20px;
         }
     </style>
+    <script src="<?= DIREKTORI . '/js/validate.js?' .time(); ?>"></script>
 </head>
 <body class="h-100%">
 <nav class="navbar navbar-expand-lg bg-body-tertiary px-4">

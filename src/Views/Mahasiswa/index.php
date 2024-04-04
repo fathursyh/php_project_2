@@ -10,7 +10,9 @@
             <div class="row">
                 <div class="col-lg-12 ms-auto">
                     <?php
+
                     use App\Core\Flasher;
+
                     Flasher::flash();
                     ?>
                 </div>
@@ -46,19 +48,24 @@
             </div>
             <div class="modal-body">
 
-                <form action="<?= DIREKTORI ?>/mahasiswa/tambah" method="post">
+                <form action="<?= DIREKTORI ?>/mahasiswa/tambah" method="post" name="mahasiswaForm" onsubmit=" return Validate.validate('mahasiswaForm', 'npm')" autocomplete="off">
                     <input type="hidden" name="id" id="id">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="nama" aria-label="nama" aria-describedby="basic-addon1" name="nama" id="nama">
+                        <input type="text" class="form-control" placeholder="nama" aria-label="nama" aria-describedby="basic-addon1" name="nama" id="nama" required>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="npm" aria-label="npm" aria-describedby="basic-addon1" name="npm" id="npm">
+                        <input type="text" class="form-control" placeholder="npm" aria-label="npm" aria-describedby="basic-addon1" name="npm" id="npm" required pattern="^(0)(6)(5)(1)[0-9]{5}$" oninvalid="setCustomValidity('Masukan NPM dengan benar! (0651XXXX)')" maxlength="9">
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="jurusan" aria-label="jurusan" aria-describedby="basic-addon1" name="jurusan" id="jurusan">
+                        <select id="jurusan" name="jurusan" placeholder="jurusan" required class="form-select">
+                            <option value="" disabled selected>-- pilih jurusan --</option>
+                            <?php foreach ($data['form'] as $selections) : ?>
+                            <option value="<?= $selections ?>"><?= $selections ?></option>
+                            <?php endforeach; ?>
+                        </select>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="umur" aria-label="umur" aria-describedby="basic-addon1" name="umur" id="umur">
+                        <input type="text" class="form-control" placeholder="umur" aria-label="umur" aria-describedby="basic-addon1" name="umur" id="umur" required>
                     </div>
             </div>
             <div class="modal-footer">

@@ -24,4 +24,9 @@ $('.ubahData').on('click', function(){
 $('.tambahData').on('click', function(){
     $('#judulModal').text('Tambah Data Mahasiswa')
     $('.modal-footer button[type=submit]').text('Tambah');
+    $('#nama').val('');
+    $('#npm').val('');
+    $('#jurusan').val('');
+    $('#umur').val('');
+    $('#id').val('');
 })
