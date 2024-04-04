@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-sm-4 col-12">
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#formModal">
+            <button type="button" class="btn btn-primary mb-2 tambahData" data-bs-toggle="modal" data-bs-target="#formModal">
                 Tambah Data
             </button>
 
@@ -22,7 +22,7 @@
                     <li class="list-group-item">
                         <?= $mhs['nama'] ?>
                         <a class="badge bg-danger text-white float-end ms-1" href="<?= DIREKTORI ?>/mahasiswa/hapus/<?= $mhs['npm'] ?>" onclick="return confirm('hapus data?')">Delete</a>
-                        <a class="badge bg-success text-white float-end ms-1 ubahData" href="<?= DIREKTORI ?>/mahasiswa/ubah/<?= $mhs['npm'] ?>" data-bs-toggle="modal" data-bs-target="#formModal">Edit</a>
+                        <a class="badge bg-success text-white float-end ms-1 ubahData" href="<?= DIREKTORI ?>/mahasiswa/ubah/<?= $mhs['npm'] ?>" data-bs-toggle="modal" data-bs-target="#formModal" data-id="<?= $mhs['npm']; ?>">Edit</a>
                         <a class="badge bg-primary text-white float-end ms-1" href="<?= DIREKTORI ?>/mahasiswa/detail/<?= $mhs['npm'] ?>">Detail</a>
                     </li>
                 <?php endforeach; ?>
@@ -47,18 +47,18 @@
             <div class="modal-body">
 
                 <form action="<?= DIREKTORI ?>/mahasiswa/tambah" method="post">
-
+                    <input type="hidden" name="id" id="id">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="nama" aria-label="nama" aria-describedby="basic-addon1" name="nama">
+                        <input type="text" class="form-control" placeholder="nama" aria-label="nama" aria-describedby="basic-addon1" name="nama" id="nama">
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="npm" aria-label="npm" aria-describedby="basic-addon1" name="npm">
+                        <input type="text" class="form-control" placeholder="npm" aria-label="npm" aria-describedby="basic-addon1" name="npm" id="npm">
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="jurusan" aria-label="jurusan" aria-describedby="basic-addon1" name="jurusan">
+                        <input type="text" class="form-control" placeholder="jurusan" aria-label="jurusan" aria-describedby="basic-addon1" name="jurusan" id="jurusan">
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="umur" aria-label="umur" aria-describedby="basic-addon1" name="umur">
+                        <input type="text" class="form-control" placeholder="umur" aria-label="umur" aria-describedby="basic-addon1" name="umur" id="umur">
                     </div>
             </div>
             <div class="modal-footer">
