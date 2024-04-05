@@ -7,24 +7,17 @@ class App
     protected $controller = 'Home';
     protected $method = 'index';
     protected $params = [];
-    public $status = false;
-    public function __construct() {
+    public static $status = false;
+    public function __construct()
+    {
 
-        if (!isset($_COOKIE['user']) && !$this->status) {
-            $this->controller = 'Login';
-        }
         $url = $this->parseURL();
 
         // CONTROLLER
         if (isset($url[0])) {
             if (file_exists('../src/Controllers/' . $url[0] . '.php')) {
-                if(!$this->status) {
-                    $this->controller = 'Login';
-                    unset($url[0]);
-                } else {
-                    $this->controller = $url[0];
-                    unset($url[0]);
-                }
+                $this->controller = $url[0];
+                unset($url[0]);
             }
         }
 
