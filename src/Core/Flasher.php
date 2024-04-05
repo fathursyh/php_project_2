@@ -23,4 +23,14 @@ class Flasher
             unset($_SESSION['flash']);
         }
     }
+    public static function flashLogin()
+    {
+        if (isset($_SESSION['flash'])) {
+            echo '<div class="alert alert-' . $_SESSION['flash']['type'] . ' alert-dismissible fade show" role="alert">
+            User <strong>' . $_SESSION['flash']['text'] . '</strong> login' .
+                '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>';
+            unset($_SESSION['flash']);
+        }
+    }
 }

@@ -14,7 +14,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title text-center">Login</h5>
-                        <form action="<?= DIREKTORI ?>/login/verify" method="post" name="loginForm">
+                        <form action="<?= DIREKTORI ?>/login/verify" method="post" name="loginForm" autocomplete="off">
                             <div class="form-group">
                                 <label for="email">Email address</label>
                                 <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">

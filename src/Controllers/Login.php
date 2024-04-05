@@ -9,6 +9,12 @@ class Login extends Controller {
     }
 
     public function verify() {
-        var_dump($_POST);
+       if ($this->model('User_model')->login($_POST)) {
+        header('Location:' . DIREKTORI . '/Home');
+        exit();
+       } else {
+        echo 'Login failed';
+       }
+       
     }
 }
