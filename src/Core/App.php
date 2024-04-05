@@ -6,6 +6,10 @@ class App {
     protected $method = 'index';
     protected $params = [];
     public function __construct() {
+        if(!isset($_COOKIE['user'])) {
+            $this->controller = 'Login';
+        }
+
         $url = $this->parseURL();
 
        // CONTROLLER
