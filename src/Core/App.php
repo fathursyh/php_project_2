@@ -1,13 +1,15 @@
 <?php
+
 namespace App\Core;
 
 class App
 {
     protected $nameSpaceController = "App\\Controllers\\";
-    protected $controller = 'Home';
+    protected $controller = "Home";
     protected $method = 'index';
     protected $params = [];
-    public static $status = false;
+    static public $state = false;
+
     public function __construct()
     {
 
@@ -19,6 +21,11 @@ class App
                 $this->controller = $url[0];
                 unset($url[0]);
             }
+        }
+        if (User::getStatus() == Status::LOGOUT) {
+            // $this->controller = 'Login';
+            var_dump(User::getStatus());
+            var_dump(self::$state);
         }
 
         $this->controller = new ($this->nameSpaceController . $this->controller);
@@ -51,5 +58,3 @@ class App
     }
 
 }
-
-

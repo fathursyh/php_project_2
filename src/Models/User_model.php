@@ -1,5 +1,7 @@
 <?php
 namespace App\Models;
+
+use App\Core\App;
 use App\Core\Database;
 
 class User_model {
@@ -24,6 +26,7 @@ class User_model {
   public function login($data) {
     $this->userLogin = $this->getUserFromEmail($data['email']);
     if ($this->userLogin && $this->userLogin['password'] == $data['password']) {
+      App::$state = true;
       return true;
     } else {
       return false;

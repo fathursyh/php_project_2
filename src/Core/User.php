@@ -3,21 +3,16 @@
 namespace App\Core;
 
 class User {
-  private $status;
+  private static $status = Status::LOGOUT;
 
-  public function __construct() {
-    $this->setStatus(Status::LOGOUT);
-  }
-  
-  public function getStatus() {
-    return $this->status;
+  public static function getStatus() {
+    return self::$status;
   }
 
-  public function setStatus(string $status): self {
+  public static function setStatus(string $status) {
     if (!isset(Status::LOGIN_STATUS[$status])) {
       throw new \InvalidArgumentException('invalid status');
     }
-    $this->status = $status;
-    return $this;
+    self::$status = $status;
   }
 }
