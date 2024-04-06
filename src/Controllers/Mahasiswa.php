@@ -10,8 +10,8 @@ class Mahasiswa extends Controller {
 
     public function index() {
         $data['header'] = 'Daftar Mahasiswa';
-        $data['nama'] = $this->model('User_model')->getUser('fathur@gmail.com');
-        $path = BASEPATH . '/php_project_2/assets/files/mahasiswa.csv';
+        $data['nama'] = $_SESSION['username'];
+        // $path = BASEPATH . '/php_project_2/assets/files/mahasiswa.csv';
         $data['form'] = JURUSAN;
         $data['mhs'] = $this->model('Mahasiswa_model')->getMahasiswaFromDb();
         $this->render('template/headers', $data);
@@ -21,7 +21,7 @@ class Mahasiswa extends Controller {
     
     public function detail($npm) {
         $data['header'] = 'Detail Mahasiswa';
-        $data['nama'] = $this->model('User_model')->getUser('fathur@gmail.com');
+        $data['nama'] = $_SESSION['username'];
         $data['mhs'] = $this->model('Mahasiswa_model')->getMahasiswaNpm($npm);
         $this->render('template/headers', $data);
         $this->render('mahasiswa/detail', $data);

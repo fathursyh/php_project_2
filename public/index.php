@@ -1,6 +1,7 @@
 <?php
 
 use App\Core\App;
+
 include_once '../src/Config/config.php';
 require '../vendor/autoload.php';
 
@@ -8,5 +9,4 @@ require '../vendor/autoload.php';
 if(!session_id()) {
     session_start();
 }
-
 $app = new App();

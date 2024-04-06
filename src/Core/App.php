@@ -4,30 +4,27 @@ namespace App\Core;
 
 class App
 {
-    protected $nameSpaceController = "App\\Controllers\\";
+    private $nameSpaceController = "App\\Controllers\\";
     protected $controller = "Home";
     protected $method = 'index';
     protected $params = [];
-    static public $state = false;
-
     public function __construct()
     {
+        LogicController::checkUserFromSession('user'); 
 
         $url = $this->parseURL();
 
-        // CONTROLLER
+        // CONTROLLER / PAGE
         if (isset($url[0])) {
             if (file_exists('../src/Controllers/' . $url[0] . '.php')) {
                 $this->controller = $url[0];
+                $_SESSION['lastC'] ??= '/' . $url[0];
                 unset($url[0]);
             }
         }
         if (User::getStatus() == Status::LOGOUT) {
-            // $this->controller = 'Login';
-            var_dump(User::getStatus());
-            var_dump(self::$state);
+            $this->controller = 'login';
         }
-
         $this->controller = new ($this->nameSpaceController . $this->controller);
 
         // METHOD
@@ -38,16 +35,21 @@ class App
             }
         }
 
-        // PARAMS
+        // PARAMETER
         if (!empty($url)) {
             $this->params = array_values($url);
         }
 
-        // RUN CONTROLLER, METHOD, AND PARAMS
-        call_user_func_array([$this->controller, $this->method], $this->params);
+        // RUN CONTROLLER, METHOD, AND PARAMETER
+        call_user_func_array([$this->controller, $this->method], $this->params);        
     }
 
-    public function parseURL()
+    public function __destruct()
+    {
+        unset($_SESSION);
+    }
+
+    public static function parseURL()
     {
         if (isset($_GET['url'])) {
             $url = rtrim($_GET['url'], '/');

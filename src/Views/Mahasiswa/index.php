@@ -10,10 +10,7 @@
             <div class="row">
                 <div class="col-lg-12 ms-auto">
                     <?php
-
-                    use App\Core\Flasher;
-
-                    Flasher::flash();
+                    App\Core\Flasher::flash();
                     ?>
                 </div>
             </div>
@@ -54,7 +51,7 @@
                         <input type="text" class="form-control" placeholder="nama" aria-label="nama" aria-describedby="basic-addon1" name="nama" id="nama" required>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="npm" aria-label="npm" aria-describedby="basic-addon1" name="npm" id="npm" required pattern="^0651[0-9][0-9][0-9][0-9][0-9]$" oninvalid="setCustomValidity('Masukan NPM dengan benar! (0651XXXX)')" maxlength="9">
+                        <input type="text" class="form-control" placeholder="npm" aria-label="npm" aria-describedby="basic-addon1" name="npm" id="npm" required  oninvalid="setCustomValidity('Masukan NPM dengan benar! (0651XXXX)')" maxlength="9">
                     </div>
                     <div class="input-group mb-3">
                         <select id="jurusan" name="jurusan" placeholder="jurusan" required class="form-select">

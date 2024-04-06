@@ -3,7 +3,7 @@
 namespace App\Core;
 
 class User {
-  private static $status = Status::LOGOUT;
+  private static $status;
 
   public static function getStatus() {
     return self::$status;
