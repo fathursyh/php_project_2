@@ -34,16 +34,6 @@
         <li class="nav-item rounded">
           <a class="nav-link" href="#">Pricing</a>
         </li>
-        <li class="nav-item dropdown rounded">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="true" >
-            Divisions
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end text-end">
-            <li><a class="dropdown-item" href="#">Fathur Syah</a></li>
-            <li><a class="dropdown-item" href="#">Gabriel Sebastian</a></li>
-            <li><a class="dropdown-item" href="#">Muhammad Abian</a></li>
-          </ul>
-        </li>
         <li class="nav-item rounded">
           <a class="nav-link" href="#"><b><?= $data['nama'] ?? 'User' ?></b></a>
         </li>

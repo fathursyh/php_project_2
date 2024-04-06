@@ -10,7 +10,10 @@ class App
     protected $params = [];
     public function __construct()
     {
-        LogicController::checkUserFromSession('user'); 
+        // var_dump($_SESSION);
+        // var_dump($_POST);
+
+        LogicController::checkSession('user'); 
 
         $url = $this->parseURL();
 
@@ -42,11 +45,6 @@ class App
 
         // RUN CONTROLLER, METHOD, AND PARAMETER
         call_user_func_array([$this->controller, $this->method], $this->params);        
-    }
-
-    public function __destruct()
-    {
-        unset($_SESSION);
     }
 
     public static function parseURL()

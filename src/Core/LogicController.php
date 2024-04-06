@@ -12,7 +12,7 @@ class LogicController {
     }
   }
 
-  public static function checkUserFromSession($variable) {
+  public static function checkSession($variable) {
     if(!isset($_SESSION[$variable])) {
       User::setStatus(Status::LOGOUT);
     } else {

@@ -30,3 +30,7 @@ $('.tambahData').on('click', function(){
     $('#umur').val('');
     $('#id').val('');
 })
+
+
+
+

@@ -23,4 +23,12 @@ a {
     text-decoration: none;
 }
 
+#errorLogin {
+    font-weight: bolder;
+    color: red;
+}
 
+.hideContent {
+    opacity: 0;
+    display: none;
+}

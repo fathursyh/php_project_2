@@ -1,11 +1,9 @@
 <?php
 namespace App\Models;
 
-use App\Core\App;
 use App\Core\Database;
 
 class User_model {
-  private $user;
   private $db;
   private $userLogin;
 
@@ -20,8 +18,8 @@ class User_model {
 
   public function login($data) {
     $this->userLogin = $this->getUserFromEmail($data['email']);
-    $_SESSION['username'] = $this->userLogin['username'];
     if ($this->userLogin && $this->userLogin['password'] == $data['password']) {
+      $_SESSION['username'] = $this->userLogin['username'];
       return true;
     } else {
       return false;
