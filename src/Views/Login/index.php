@@ -18,7 +18,7 @@
                         <form action="<?= DIREKTORI ?>/login/verify" method="post" name="loginForm" autocomplete="off">
                             <div class="form-group">
                                 <label for="email">Email address</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required autofocus value="<?= $_SESSION['failedUser']['email'] ?? ''?> " onfocus="moveCursorToEnd(this)">
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" autofocus value="<?= $_SESSION['failedUser']['email'] ?? ''?> " onfocus="moveCursorToEnd(this)">
                             </div>
                             <div class="form-group">
                                 <label for="password">Password</label>

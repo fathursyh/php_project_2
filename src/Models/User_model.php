@@ -17,7 +17,7 @@ class User_model {
   }
 
   public function login($data) {
-    $this->userLogin = $this->getUserFromEmail($data['email']);
+    $this->userLogin = $this->getUserFromEmail(filter_var($data['email'], FILTER_VALIDATE_EMAIL));
     if ($this->userLogin && $this->userLogin['password'] == $data['password']) {
       $_SESSION['username'] = $this->userLogin['username'];
       return true;

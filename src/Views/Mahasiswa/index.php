@@ -44,10 +44,10 @@
             </div>
             <div class="modal-body">
 
-                <form action="<?= DIREKTORI ?>/mahasiswa/tambah" method="post" name="mahasiswaForm" autocomplete="off">
+                <form action="<?= (DIREKTORI . '/mahasiswa/tambah'); ?>"  method="post" name="mahasiswaForm" autocomplete="off">
                     <input type="hidden" name="id" id="id">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="nama" aria-label="nama" aria-describedby="basic-addon1" name="nama" id="nama" required>
+                        <input type="text" class="form-control" placeholder="nama" aria-label="nama" aria-describedby="basic-addon1" name="nama" id="nama" required autofocus maxlength="40">
                     </div>
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" placeholder="npm" aria-label="npm" aria-describedby="basic-addon1" name="npm" id="npm" required maxlength="9" pattern="^0651[0-9]{5}$" onblur="this.setAttribute('placeholder','npm')">
@@ -61,7 +61,7 @@
                         </select>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="umur" aria-label="umur" aria-describedby="basic-addon1" name="umur" id="umur" required>
+                        <input type="text" class="form-control" placeholder="umur" aria-label="umur" aria-describedby="basic-addon1" name="umur" id="umur" required maxlength="3">
                     </div>
             </div>
             <div class="modal-footer">

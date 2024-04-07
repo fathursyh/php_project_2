@@ -11,7 +11,6 @@ class App
     public function __construct()
     {
         // var_dump($_SESSION);
-        // var_dump($_POST);
 
         LogicController::checkSession('user'); 
 

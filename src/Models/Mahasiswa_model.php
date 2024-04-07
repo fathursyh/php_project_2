@@ -31,10 +31,10 @@ class Mahasiswa_model {
         $query = "INSERT INTO mahasiswa VALUES
         (:nama, :npm, :jurusan, :umur)";
         $this->db->query($query);
-        $this->db->bind('nama', $data['nama']);
+        $this->db->bind('nama', trim($data['nama']));
         $this->db->bind('npm', $data['npm']);
         $this->db->bind('jurusan', $data['jurusan']);
-        $this->db->bind('umur', $data['umur']);
+        $this->db->bind('umur', trim($data['umur']));
 
         $this->db->execute();
 
@@ -60,10 +60,10 @@ class Mahasiswa_model {
                     WHERE npm = :id";
 
         $this->db->query($query);
-        $this->db->bind('nama', $data['nama']);
+        $this->db->bind('nama', trim($data['nama']));
         $this->db->bind('npm', $data['npm']);
         $this->db->bind('jurusan', $data['jurusan']);
-        $this->db->bind('umur', $data['umur']);
+        $this->db->bind('umur', trim($data['umur']));
         $this->db->bind('id', $data['id']);
 
         $this->db->execute();
