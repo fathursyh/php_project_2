@@ -42,7 +42,7 @@
         document.getElementById('errorLogin').classList.remove('hideContent');
         setTimeout(function() {
             document.getElementById('errorLogin').classList.add('hideContent');
-        }, 3000);
+        }, 6000);
     }
     <?php
     if(isset($_SESSION['failed'])) {

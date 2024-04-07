@@ -33,7 +33,6 @@
 </div>
 
 
-
 <!-- MODAL -->
 <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="judulModal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -45,19 +44,19 @@
             </div>
             <div class="modal-body">
 
-                <form action="<?= DIREKTORI ?>/mahasiswa/tambah" method="post" name="mahasiswaForm" onsubmit=" return Validate.validate('mahasiswaForm', 'npm')" autocomplete="off">
+                <form action="<?= DIREKTORI ?>/mahasiswa/tambah" method="post" name="mahasiswaForm" autocomplete="off">
                     <input type="hidden" name="id" id="id">
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" placeholder="nama" aria-label="nama" aria-describedby="basic-addon1" name="nama" id="nama" required>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="npm" aria-label="npm" aria-describedby="basic-addon1" name="npm" id="npm" required  oninvalid="setCustomValidity('Masukan NPM dengan benar! (0651XXXX)')" maxlength="9">
+                        <input type="text" class="form-control" placeholder="npm" aria-label="npm" aria-describedby="basic-addon1" name="npm" id="npm" required maxlength="9" pattern="^0651[0-9]{5}$" onblur="this.setAttribute('placeholder','npm')">
                     </div>
                     <div class="input-group mb-3">
                         <select id="jurusan" name="jurusan" placeholder="jurusan" required class="form-select">
                             <option value="" disabled selected>-- pilih jurusan --</option>
                             <?php foreach ($data['form'] as $selections) : ?>
-                            <option value="<?= $selections ?>"><?= $selections ?></option>
+                                <option value="<?= $selections ?>"><?= $selections ?></option>
                             <?php endforeach; ?>
                         </select>
                     </div>
@@ -67,7 +66,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary">Tambah</button>
+                <button type="submit" class="btn btn-primary" onclick="addCustomValidity()">Tambah</button>
                 </form>
             </div>
         </div>
